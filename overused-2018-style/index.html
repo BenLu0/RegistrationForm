@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <!-- <link rel="stylesheet" href="normalize.css"> -->
+  <title>Registration Form</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Registration Form</h1>
+    <p>Please fill out these forms to apply</p>
+  </header>
+  <!-- Main -->
+  <main>
+    <form action="#">
+      <!-- Contact Details -->
+      <fieldset id="contact-details">
+        <!-- Name -->
+        <label for="first-name">First name
+          <input type="text" name="first-name" id="first-name" placeholder="John" required></label>
+        <label for="last-name">Last name
+          <input type="text" name="last-name" id="last-name" placeholder="Smith" required></label>
+          <!-- Phone Number -->
+          <!-- HTML5 Form Validation needed for phone number -->
+       <label for="phone-number">Phone number <span class="fine-print" title="We do not sell customer information to third parties, we will use this number for emergency contact if we cannot reach you through your email">Why? What's my number being used for?</span>
+          <input type="number" name="phone-number" id="phone-number" placeholder="123-456-7890" minlength="10" maxlength="12"></label>
+          <!-- Email -->
+        <label for="email">Email
+          <input type="email" name="email" id="email" placeholder="John@Smith.com" required></label>
+      </fieldset>
+      <!-- Demographic Details -->
+      <fieldset>
+        <!-- Gender -->
+        <label for="gender">
+          <input type="radio" name="gender" id="male" value="male">Male
+        </label>
+        <label for="gender">
+          <input type="radio" name="gender" id="female" value="female">Female
+        </label>
+        <!-- Age -->
+        <label for="age">Enter your age:
+          <input type="number" name="age" id="age">
+        </label>
+      </fieldset>
+      <!-- Free Stuff -->
+      <fieldset>
+        <label for="free-item">We're offering free merch for participants!
+          <select name="free-item" id="free-item">
+            <option value="">(Select one)</option>
+            <option value="1">Shirt</option>
+            <option value="2">Laptop Sticker</option>
+            <option value="3">Bracelet</option>
+          </select>
+        </label>
+      </fieldset>
+      <label for="submit">
+        <input type="submit" name="submit" id="submit" value="Sign me up!">
+      </label>
+    </form>
+  </main>
+  <!-- Footer -->
+  <footer>
+
+  </footer>
+</body>
+</html>
